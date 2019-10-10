@@ -1,0 +1,48 @@
+.row {
+ display: flex;
+ margin: auto;
+ background-color: rgb(218,131,131);
+
+}
+
+.column {
+ flex: 33.33%;
+ padding: 100px;
+ text-align: justify;
+ width: 220;
+}
+
+#reset
+  {
+    color: black;
+    background-color: red;
+  }
+
+#userbox
+  {
+    position:absolute;
+  top:0;
+  right:0;
+  }
+
+#final
+  {
+  position:absolute;
+  bottom:0;
+  right:30;
+  height: 100;
+  width: 200;
+  background-color: rgb(9,23,225);
+  color: white;
+  }
+
+  table, th, td
+    {
+      border: 1px solid black;
+       border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }

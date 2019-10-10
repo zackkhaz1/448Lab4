@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title> Welcome to my store </title>
+  <script type="text/javascript" src="formChecker.js"> </script>
+  <link href="storeStyle.css" rel="stylesheet" />
+</head>
+<form action="customerBackend.php" method="post">
+
+  <body>
+    <center>
+      <h1> Welcome to Khaz's Programming Lab Emporium </h1>
+      <h3> Feel free to browse from my many options </h3>
+    </center>
+    <input type="reset" id="reset" value="Reset all forms">
+
+    <div id="userbox">
+      <br>
+      Username: <input type="text" id="username" name="username" required> <br> <br>
+      Password: <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="happy.png" width="162" height="256">
+        <p> Purchase an A+ 268 lab </p>
+        <p> Your TA will love this thing </p>
+        <p> $259.99 each </p>
+        Enter desired quantity: <input type="number" name="268quantityA" min="0" required>
+      </div>
+
+      <div class="column">
+        <br> <br> <br> <br>
+        <img src="C.png" width="220" height="180">
+        <p> Purchase a C level 268 lab </p>
+        <p> Featuring memory leaks and undefined behavior! </p>
+        <p> $150.99 each </p>
+        Enter desired quantity: <input type="number" name="268quantityC" min="0" required>
+      </div>
+
+      <div class="column">
+        <br> <br> <br> <br>
+        <img src="fail.jpg" width="310" height="185">
+        <p> Purchase an F level 268 lab </p>
+        <p> This probably won't even compile </p>
+        <p> $99.99 each </p>
+        Enter desired quantity: <input type="number" name="268quantityF" min="0" required>
+      </div>
+    </div>
+
+    <div>
+      <h3> Shipping Options (Labs will be delivered via email)</h3>
+      <input type="radio" name="shipping" value="Free" required> Free 7 day shipping <br>
+      <input type="radio" name="shipping" value="Three Day" required> 3 day shipping for $5 <br>
+      <input type="radio" name="shipping" value="Overnight" required> Overnight shipping for $50 <br>
+    </div>
+
+    <div>
+      <input type="submit" id="final" value="Submit order" onclick="checkForms()">
+    </div>
+
+  </body>
+</form>
+
+</html>
